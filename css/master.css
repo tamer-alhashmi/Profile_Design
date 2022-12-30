@@ -213,7 +213,7 @@ ul {
 
 @media (max-width: 767px) {
     .wrapper {
-        grid-template-columns: minmax(200, 1fr);
+        grid-template-columns: minmax(200px, 1fr);
         margin-left: 10px;
         margin-right: 10px;
         gap: 10px;
@@ -254,12 +254,7 @@ ul {
 
 .wellcome .visit {
     margin: 0 15px 15px auto;
-    transform: var(--main-transition);
-}
-
-.wellcome .visit {
-    margin: 0 15px 15px auto;
-    transform: var(--main-transition);
+    transition: var(--main-transition);
 }
 
 .wellcome .visit:hover {
@@ -281,3 +276,146 @@ ul {
 }
 
 /* End wellcome widget */
+/* Start Quick Draft Widget */
+.quick-draft textarea {
+    resize: none;
+    min-height: 180px;
+}
+
+.quick-draft .save {
+    margin-left: auto;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.quick-draft .save:hover {
+    background-color: var(--blue-alt-color);
+}
+
+/* End Quick Draft Widget */
+/* Start Targets Widget */
+
+.Targets .target-row .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.Targets .details {
+    flex: 1;
+}
+
+.Targets .details .progress {
+    height: 4px;
+}
+
+.Targets .details .progress>span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.Targets .details .progress>span span {
+    position: absolute;
+    bottom: 16px;
+    right: -16px;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.Targets .details .progress>span span::after {
+    content: '';
+    position: absolute;
+    border-color: transparent;
+    border-width: 5px;
+    border-style: solid;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Targets .details .progress .blue span::after {
+    border-top-color: var(--blue-color);
+}
+
+.Targets .details .progress .orange span::after {
+    border-top-color: var(--orange-color);
+}
+
+.Targets .details .progress .green span::after {
+    border-top-color: var(--green-color);
+}
+
+.blue .icon,
+.blue .progress {
+    background-color: rgb(0 117 255 / 20%);
+}
+
+.orange .icon,
+.orange .progress {
+    background-color: rgb(245 158 11 / 20%);
+}
+
+.green .icon,
+.green .progress {
+    background-color: rgb(34 197 94 / 20%);
+}
+
+/* End Targets Widget */
+/* Start Tickets Widget */
+.tickets .box {
+    /* flex: 45%; */
+    width: 45%;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 767px) {
+    .tickets .box {
+        width: 100%;
+    }
+}
+/* End Tickets Widget */
+
+
+/* Start letst-news  */
+.latest-news .news-row:not(:last-of-type) {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 767px) {
+
+    .latest-news .news-row {
+        display: block;
+    }
+
+    .latest-news .news-row .lable {
+        margin: 10px auto;
+        width: fit-content;
+    }
+}
+
+.latest-news .news-row img {
+    width: 100px;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+
+.latest-news .news-row .info {
+    flex-grow: 1;
+}
+
+.latest-news .news-row .info h3 {
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+
+.latest-news .news-row .lable {
+    padding: 4px 10px;
+}
+
+/* End letst-news  */
