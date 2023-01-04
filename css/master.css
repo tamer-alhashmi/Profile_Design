@@ -1256,3 +1256,471 @@ h2 {
 }
 
 /* End Projects Page */
+
+/* Start courses Page */
+.courses-area {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.courses-area .box .intro-area {
+    position: relative;
+    width: 100%;
+    height: 235px;
+    border-radius: 8px 8px 0 0;
+    background-image: url(/imgs/course-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.courses-area .box:nth-child(2) .intro-area {
+    background-image: url(/imgs/course-02.jpg);
+}
+
+.courses-area .box:nth-child(3) .intro-area {
+    background-image: url(/imgs/course-03.jpg);
+}
+
+.courses-area .box:nth-child(4) .intro-area {
+    background-image: url(/imgs/course-04.jpg);
+}
+
+.courses-area .box:nth-child(5) .intro-area {
+    background-image: url(/imgs/course-05.jpg);
+}
+
+.courses-area .box:nth-child(6) .intro-area {
+    background-image: url(/imgs/course-04.jpg);
+}
+
+.courses-area .box:nth-child(7) .intro-area {
+    background-image: url(/imgs/course-03.jpg);
+}
+
+.courses-area .box:nth-child(8) .intro-area {
+    background-image: url(/imgs/course-04.jpg);
+}
+
+.courses-area .box:nth-child(9) .intro-area {
+    background-image: url(/imgs/course-01.jpg);
+}
+
+.courses-area .box:nth-child(10) .intro-area {
+    background-image: url(/imgs/course-05.jpg);
+}
+
+.courses-area .box .intro-area img {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+    border: 2px solid white;
+}
+
+.courses-area .box .data h3 {
+    font-size: 16px;
+}
+
+.courses-area .box .data p {
+    line-height: 1.6;
+}
+
+.courses-area .box .money-bar {
+    position: relative;
+    color: grey;
+}
+
+.courses-area .box .money-bar::before {
+    content: 'Courrse Info';
+    position: absolute;
+    background-color: var(--blue-color);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    top: -15px;
+    width: 90px;
+    text-align: center;
+    left: calc(50% - 45px);
+}
+
+.courses-area .box .money-bar:hover {
+    color: var(--blue-color);
+}
+
+/* End courses Page */
+
+/* Start Freinds Page */
+.freinds-area {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.freinds-area .box {
+    padding: 10px 20px 10px;
+}
+
+.freinds-area .box .contact-icons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.freinds-area .box .contact-icons i {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 50%;
+    color: #666;
+    font-size: 13px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+
+.freinds-area .box .contact-icons i:hover {
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.freinds-area .box .image-row {
+    text-align: center;
+}
+
+.freinds-area .box .image-row img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 0 10px;
+}
+
+.freinds-area .box .numbers-row div {
+    margin-bottom: 10px;
+}
+
+.freinds-area .box .numbers-row i {
+    margin-right: 5px;
+}
+
+.freinds-area .box .numbers-row .vip-icon {
+    font-size: 40px;
+    font-weight: bold;
+    color: #f59e0b25;
+}
+
+.freinds-area .profile-btn,
+.freinds-area .remove-btn {
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.freinds-area .profile-btn {
+    background-color: var(--blue-color);
+}
+
+.freinds-area .remove-btn {
+    background-color: var(--red-color);
+}
+
+/* End Freinds Page */
+
+/* Start Files Page */
+.files-content {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+.files-content .upload-area {
+    min-width: 260px;
+}
+
+.files-content .upload-area .file-size {
+    padding: 7px;
+}
+
+.files-content .upload-area .file-size .size-icon .icon {
+    width: 38px;
+    height: 38px;
+}
+
+.files-content .upload-area .file-size .size-icon .blue {
+    background-color: rgba(0, 0, 255, 0.15);
+}
+
+.files-content .upload-area .file-size .size-icon .green {
+    background-color: rgba(0, 128, 0, 0.15);
+}
+
+.files-content .upload-area .file-size .size-icon .red {
+    background-color: rgba(255, 0, 0, 0.15);
+}
+
+.files-content .upload-area .file-size .size-icon .orange {
+    background-color: rgba(255, 166, 0, 0.15);
+}
+
+.files-content .upload-area .file-size .size-icon i {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    display: flex !important;
+}
+
+.files-content .box-area {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    flex: 1;
+}
+
+.files-content .box-area .Files-box {
+    max-width: 100%;
+    padding: 10px 10px;
+}
+
+.files-content .box-area .Files-box i {
+    top: 5px;
+    left: 5px;
+}
+
+.files-content .box-area .Files-box .image-row {
+    text-align: center;
+}
+
+.files-content .box-area .Files-box .image-row img {
+    width: 70px;
+    height: 80px;
+}
+
+/* End Files Page */
+
+/* Start free card */
+.plans-content {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .plans-content {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+.plans-content .free-card,
+.plans-content .basic-card,
+.plans-content .premium-card {
+    position: relative;
+    background-color: #0075ff15;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.plans-content .dots {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+}
+
+.plans-content .dots div {
+    width: 7px;
+    height: 7px;
+    background-color: #0075ff55;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.plans-content .data-box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 1px 2px #00000020;
+    position: relative;
+    overflow: hidden;
+}
+
+
+@media (max-width: 767px) {
+    .plans-content .free-card .data-box .box-info {
+        margin-top: 15px;
+    }
+}
+
+.plans-content .free-card .plan-title {
+    background-color: var(--blue-color);
+}
+
+.plans-content .basic-card .plan-title {
+    background-color: var(--green-color);
+}
+
+.plans-content .premium-card .plan-title {
+    background-color: var(--orange-color);
+}
+
+.plans-content .plan-title {
+    position: relative;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding-bottom: 20px;
+    text-shadow: 0px 1px 2px #00000040;
+    box-shadow: 0px 1px 2px #00000040;
+    color: white;
+    overflow: hidden;
+}
+
+.plans-content .plan-title h3 {
+    font-weight: 800;
+    font-size: 40px;
+    margin: 0;
+}
+
+.plans-content .plan-title .price {
+    position: relative;
+}
+
+.plans-content .plan-title .price span {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.plans-content .plan-title .price i {
+    top: 0;
+    left: 0;
+    margin-right: 5px;
+    font-family: sans;
+    font-size: 25px;
+
+}
+
+.plans-content .data-box .info-row {
+    font-size: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.plans-content .data-box .box-info {
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+.plans-content .free-card .box-info {
+    border: 1px solid #0075ff26;
+}
+
+.plans-content .basic-card .box-info {
+    border: 1px solid #22c55e26;
+}
+
+.plans-content .premium-card .box-info {
+    border: 1px solid #f59e0b26;
+}
+
+.plans-content .data-box .info-row .yes {
+    color: green;
+}
+
+.plans-content .data-box .info-row .no {
+    color: red;
+}
+
+.plans-content .data-box .info-row .help {
+    color: grey;
+}
+
+/* Buy Botton color  */
+@media (max-width :767px) {
+    .plans-content .buy-btn {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.plans-content .buy-btn a {
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin: 10px;
+    color: white;
+    transition: var(--main-transition);
+}
+
+.plans-content .free-card .buy-btn a {
+    background-color: var(--blue-color);
+    border-bottom: 4px solid var(--blue-alt-color);
+
+}
+
+.plans-content .basic-card .buy-btn a {
+    background-color: var(--green-color);
+    border-bottom: 4px solid rgba(0, 128, 0, 0.911);
+
+}
+
+.plans-content .premium-card .buy-btn a {
+    background-color: var(--orange-color);
+    border-bottom: 4px solid rgba(255, 166, 0, 0.945);
+
+}
+
+/* Start Hover Animation */
+.plans-content .data-box .box-info .plan-title::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 150%;
+    background-color: #e9eaecbd;
+    rotate: 45deg;
+    left: -100%;
+    top: -40px;
+    transition: 0.5s;
+    opacity: 0;
+    box-shadow: 0px 1px 10px #00000020;
+    text-shadow: 0px 1px 10px #00000020;
+}
+
+.plans-content .data-box .box-info:hover .plan-title::before {
+    opacity: 1;
+    left: 150%;
+}
+
+.plans-content .data-box .box-info .plan-title::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 150%;
+    background-color: #e9eaecbd;
+    rotate: 45deg;
+    left: -50%;
+    top: -40px;
+    transition: 0.5s;
+    opacity: 0;
+    box-shadow: 0px 1px 10px #00000020;
+    text-shadow: 0px 1px 10px #00000020;
+}
+
+.plans-content .data-box .box-info:hover .plan-title::before {
+    opacity: 1;
+    left: 150%;
+}
+
+/* End Hover Animation */
+/* Start Buy Buttom Hover  */
+.plans-content .free-card .buy-btn a:hover {
+    background-color: #0075ffd6;
+}
+
+.plans-content .basic-card .buy-btn a:hover {
+    background-color: #22c55ec9;
+}
+
+.plans-content .premium-card .buy-btn a:hover {
+    background-color: #f59e0bd4;
+}
+
+/* Start Buy Buttom Hover  */
+
+/* End free card */
