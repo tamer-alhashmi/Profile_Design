@@ -1672,14 +1672,12 @@ h2 {
     position: absolute;
     width: 3px;
     height: 150%;
-    background-color: #e9eaecbd;
+    background-color: #e9eaec7e;
     rotate: 45deg;
     left: -100%;
     top: -40px;
     transition: 0.5s;
-    opacity: 0;
-    box-shadow: 0px 1px 10px #00000020;
-    text-shadow: 0px 1px 10px #00000020;
+    opacity: 0; 
 }
 
 .plans-content .data-box .box-info:hover .plan-title::before {
@@ -1690,16 +1688,14 @@ h2 {
 .plans-content .data-box .box-info .plan-title::after {
     content: '';
     position: absolute;
-    width: 5px;
+    width: 10px;
     height: 150%;
-    background-color: #e9eaecbd;
+    background-color: #e9eaec7e;
     rotate: 45deg;
     left: -50%;
     top: -40px;
     transition: 0.5s;
-    opacity: 0;
-    box-shadow: 0px 1px 10px #00000020;
-    text-shadow: 0px 1px 10px #00000020;
+    opacity: 0; 
 }
 
 .plans-content .data-box .box-info:hover .plan-title::before {
