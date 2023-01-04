@@ -564,6 +564,7 @@ h2 {
 }
 
 .social-media .box i {
+    display: flex !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -1677,7 +1678,7 @@ h2 {
     left: -100%;
     top: -40px;
     transition: 0.5s;
-    opacity: 0; 
+    opacity: 0;
 }
 
 .plans-content .data-box .box-info:hover .plan-title::before {
@@ -1695,7 +1696,7 @@ h2 {
     left: -50%;
     top: -40px;
     transition: 0.5s;
-    opacity: 0; 
+    opacity: 0;
 }
 
 .plans-content .data-box .box-info:hover .plan-title::before {
