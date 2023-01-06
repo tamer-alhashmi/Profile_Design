@@ -388,6 +388,9 @@ h2 {
     .tickets .box {
         width: 100%;
     }
+    .tickets h2 {
+        text-align: center;
+    }
 }
 
 /* End Tickets Widget */
@@ -1082,7 +1085,9 @@ h2 {
         justify-content: center;
         text-align: center;
     }
-
+    .activities h2 {
+        text-align: center;
+    }
 }
 
 .activities .act-zone .act-row .data img {
@@ -1434,9 +1439,21 @@ h2 {
 /* Start Files Page */
 .files-content {
     flex-direction: row-reverse;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    justify-content: center;
 }
 
+@media (max-width: 767px){
+    .files-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .files-content .upload-area .file-size .size-icon .icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+}
 .files-content .upload-area {
     min-width: 260px;
 }
