@@ -93,6 +93,12 @@ h2 {
     color: var(--blue-color);
 }
 
+@media (max-width: 767px){
+    .sidebar ul {
+        position: fixed;
+    }
+}
+
 .sidebar ul a {
     margin-bottom: 5px;
     transition: var(--main-transition);
