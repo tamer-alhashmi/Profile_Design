@@ -141,6 +141,23 @@ h2 {
 }
 
 /* End sidebar  */
+.scroll-Up {
+    background-color: var(--blue-alt-color);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    /* display: none; */
+    z-index: 100;
+}
+#scroll-Up:hover {
+    background-color: var(--blue-color);
+}
+
 /* Start Content Head  */
 .content {
     overflow: hidden;
@@ -809,9 +826,7 @@ h2 {
 /* End Social Info */
 
 /* Start widgets-control */
-.widgets-control {
-    /* overflow: none; */
-}
+
 
 .widgets-control .check-row .check-defult {
     -webkit-appearance: none;
