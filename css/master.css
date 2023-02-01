@@ -141,27 +141,11 @@ h2 {
 }
 
 /* End sidebar  */
-.scroll-Up {
-    background-color: var(--blue-alt-color);
-    color: white;
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
-    display: none;
-    z-index: 100;
+
+.scroll-Up:hover {
+    background-color: var(--blue-color) !important;
 }
-#scroll-Up:hover {
-    background-color: var(--blue-color);
-}
-.scroll-Up i {
-    font-size: 18px;
-}
+
 
 /* Start Content Head  */
 .content {
