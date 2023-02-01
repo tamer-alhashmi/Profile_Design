@@ -141,6 +141,12 @@ h2 {
 }
 
 /* End sidebar  */
+
+.scroll-Up:hover {
+    background-color: var(--blue-color) !important;
+}
+
+
 /* Start Content Head  */
 .content {
     overflow: hidden;
@@ -810,8 +816,8 @@ h2 {
 
 /* Start widgets-control */
 /* .widgets-control {
-    /* overflow: none; */
-
+    overflow: none;
+} */
 
 .widgets-control .check-row .check-defult {
     -webkit-appearance: none;
