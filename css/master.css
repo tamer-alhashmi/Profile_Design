@@ -5,7 +5,7 @@
     --green-color: #22c55e;
     --red-color: #f44336;
     --grey-color: #888;
-    --main-transition: 0.3s ease;
+    --main-transition: 0.5s ease;
 }
 
 * {
@@ -15,8 +15,9 @@
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
+    scroll-behavior: smooth;
+    transition: 0.5s ease;
 }
-
 *:focus {
     outline: none;
 }
@@ -59,6 +60,7 @@ h2 {
 .sidebar {
     width: 250px;
     box-shadow: 0 0 10px #ddd;
+    transition: var(--main-transition);
 }
 
 .sidebar>h3 {
@@ -91,52 +93,61 @@ h2 {
 
 .sidebar ul li:hover i {
     color: var(--blue-color);
+    transition: var(--main-transition);
 }
 
 @media (max-width: 767px){
     .sidebar ul {
         position: fixed;
+        transition: var(--main-transition);
     }
 }
 
 .sidebar ul a {
     margin-bottom: 5px;
-    transition: var(--main-transition);
+    transition: 0.6s;
     border-radius: 6px;
 }
 
 .sidebar ul li a:hover {
     transform: translateX(10px);
+    transition: var(--main-transition);
 }
 
 .sidebar ul a.active,
 .sidebar ul li a:hover {
     background-color: #f6f6f6;
+    transition: var(--main-transition);
 }
 
 .sidebar ul a span {
     font-size: 14px;
     margin-left: 10px;
+    transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
     .sidebar {
         width: 58px;
         padding: 10px;
+        transition: var(--main-transition);
     }
 
     .sidebar>h3 {
         font-size: 13px;
         margin-bottom: 15px;
+        transition: var(--main-transition);
     }
 
     .sidebar>h3::before,
     .sidebar>h3::after {
         display: none;
+        transition: var(--main-transition);
     }
 
     .sidebar span {
         display: none;
+        transition: var(--main-transition);
     }
 }
 
