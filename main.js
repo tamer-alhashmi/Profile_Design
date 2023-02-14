@@ -17,9 +17,10 @@ window.onscroll = function () {
   if (window.scrollY >= 600) {
     // console.log(`Scrolling Value Is ${window.scrollY}`);
     scrBtn.style.display = "block";
+
   } else {
     scrBtn.style.display = "none";
-  }
+  };
 };
 scrBtn.onclick = function () {
   window.scrollTo({
