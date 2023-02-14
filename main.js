@@ -1,4 +1,4 @@
-// Start Creating ScrollUp Button 
+// Start Creating ScrollUp Button
 let scrBtn = document.createElement("button");
 scrBtn.className = "scroll-Up";
 
@@ -28,4 +28,28 @@ scrBtn.onclick = function () {
     behavior: "smooth",
   });
 };
-// End Creating ScrollUp Button 
+// End Creating ScrollUp Button
+
+// Start Creating Top Scroll Bar
+
+// let topScroll = document.createElement("div");
+// topScroll.classList = "topScrollStyle";
+// sideBar.before(topScroll);
+// topScroll.style.cssText =
+//   "width: 0px; height: 5px; background-color: var(--blue-color); position: fixed; z-index: 100; top: 0px; left: 0;";
+
+// window.onscroll = function (topScroBar) {
+
+// }
+//   // let scroHeight = Window.scrollY;
+//   if (window.scrollY >= 0) {
+//     console.log(`Scrolling Value Is ${window.scrollY}`);
+//     // console.log(`topScroll.style.width = ${window.scrollY}px);
+//     // console.log(topScroll.style.width);
+//     topScroll.style.width = scrollY;
+//   } else {
+//     topScroll.style.width = 0;
+//   }
+// };
+
+
